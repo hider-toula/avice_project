@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'avice.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'avicedb',
+        'NAME': 'archidb',
         'USER': 'postgres',
         'PASSWORD':'124578' ,
         'HOST': 'localhost',

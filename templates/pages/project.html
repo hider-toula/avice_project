@@ -1,0 +1,250 @@
+
+{% load static  %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}">
+    
+    <link rel="stylesheet" href="{%  static 'css/tablet.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/mobile.css' %}">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avice</title>
+</head>
+
+
+
+
+
+<body>
+
+    <header>
+
+
+        <div class="header">
+            <a class="brand" href=" {% url 'index' %}" >AVICE Architecture</a>
+            <nav class="navbar">
+                <a class="nav-item selec " href=" {% url 'index' %}" aria-current="page">Projets</a>
+                <a class="nav-item  " href=" {% url 'about' %}">Agence</a>
+                <a class="nav-item  " href=" {% url 'actu' %}"> Actualités</a>
+                <a class="nav-item  " href=" {% url 'contact' %}">Contact</a>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="one_project">
+
+
+        <div class="main_image">
+
+            <img src="{{project.main_big_image.url}}" alt="">
+
+        </div>
+
+        <div class="information">
+
+
+            
+
+            <div class="details">
+                <h3>{{project.title}}</h3>
+
+                {% if project.info_1 %}
+                <span>{{ project.info_1 }}</span>
+                {% endif %}
+
+                {% if project.info_2 %}
+                <span>{{ project.info_2 }}</span>
+                {% endif %}
+
+                {% if project.info_3 %}
+                <span>{{ project.info_3 }}</span>
+                {% endif %}
+
+                {% if project.info_4 %}
+                <span>{{ project.info_4 }}</span>
+                {% endif %}
+
+                {% if project.info_5 %}
+                <span>{{ project.info_5 }}</span>
+                {% endif %}
+
+                {% if project.info_6 %}
+                <span>{{ project.info_6 }}</span>
+                {% endif %}
+
+                {% if project.info_7 %}
+                <span>{{ project.info_7 }}</span>
+                {% endif %}
+
+                {% if project.info_8 %}
+                <span>{{ project.info_8 }}</span>
+                {% endif %}
+
+                {% if project.info_9 %}
+                <span>{{ project.info_9 }}</span>
+                {% endif %}
+
+                {% if project.info_10 %}
+                <span>{{ project.info_10 }}</span>
+                {% endif %}
+
+                {% if project.info_11 %}
+                <span>{{ project.info_11 }}</span>
+                {% endif %}
+
+                {% if project.info_12 %}
+                <span>{{ project.info_12 }}</span>
+                {% endif %}
+
+                {% if project.info_13 %}
+                <span>{{ project.info_13 }}</span>
+                {% endif %}
+
+                {% if project.info_14 %}
+                <span>{{ project.info_14 }}</span>
+                {% endif %}
+
+                {% if project.info_15 %}
+                <span>{{ project.info_15 }}</span>
+                {% endif %}
+
+            
+           
+
+            </div>
+
+
+
+            <div class="description">
+                
+
+                    {% if project.description %}
+                    <p>{{ project.description }} </p>
+                    {% endif %}
+               
+            </div>
+
+
+        </div>
+
+
+        <div class="s-images">
+
+            {% if project.image_1 %}
+            <img src="{{ project.image_1.url }}" alt="{{ project.image_1.alt }}">
+            {% endif %}
+
+            {% if project.image_2 %}
+            <img src="{{ project.image_2.url }}" alt="{{ project.image_2.alt }}">
+            {% endif %}
+
+            {% if project.image_3 %}
+            <img src="{{ project.image_3.url }}" alt="{{ project.image_3.alt }}">
+            {% endif %}
+
+            {% if project.image_4 %}
+            <img src="{{ project.image_4.url }}" alt="{{ project.image_4.alt }}">
+            {% endif %}
+
+            {% if project.image_5 %}
+            <img src="{{ project.image_5.url }}" alt="{{ project.image_5.alt }}">
+            {% endif %}
+
+            {% if project.image_6 %}
+            <img src="{{ project.image_6.url }}" alt="{{ project.image_6.alt }}">
+            {% endif %}
+
+            {% if project.image_7 %}
+            <img src="{{ project.image_7.url }}" alt="{{ project.image_7.alt }}">
+            {% endif %}
+
+            {% if project.image_8 %}
+            <img src="{{ project.image_8.url }}" alt="{{ project.image_8.alt }}">
+            {% endif %}
+
+            {% if project.image_9 %}
+            <img src="{{ project.image_9.url }}" alt="{{ project.image_9.alt }}">
+            {% endif %}
+
+            {% if project.image_10 %}
+            <img src="{{ project.image_10.url }}" alt="{{ project.image_10.alt }}">
+            {% endif %}
+
+            {% if project.image_11 %}
+            <img src="{{ project.image_11.url }}" alt="{{ project.image_11.alt }}">
+            {% endif %}
+
+            {% if project.image_12 %}
+            <img src="{{ project.image_12.url }}" alt="{{ project.image_12.alt }}">
+            {% endif %}
+
+            {% if project.image_13 %}
+            <img src="{{ project.image_13.url }}" alt="{{ project.image_13.alt }}">
+            {% endif %}
+
+            {% if project.image_14 %}
+            <img src="{{ project.image_14.url }}" alt="{{ project.image_14.alt }}">
+            {% endif %}
+
+            {% if project.image_15 %}
+            <img src="{{ project.image_15.url }}" alt="{{ project.image_15.alt }}">
+            {% endif %}
+
+            {% if project.image_16 %}
+            <img src="{{ project.image_16.url }}" alt="{{ project.image_16.alt }}">
+            {% endif %}
+
+            {% if project.image_17 %}
+            <img src="{{ project.image_17.url }}" alt="{{ project.image_17.alt }}">
+            {% endif %}
+
+            {% if project.image_18 %}
+            <img src="{{ project.image_18.url }}" alt="{{ project.image_18.alt }}">
+            {% endif %}
+
+            {% if project.image_19 %}
+            <img src="{{ project.image_19.url }}" alt="{{ project.image_19.alt }}">
+            {% endif %}
+
+            {% if project.image_20 %}
+            <img src="{{ project.image_20.url }}" alt="{{ project.image_20.alt }}">
+            {% endif %}
+
+            {% if project.image_21 %}
+            <img src="{{ project.image_21.url }}" alt="{{ project.image_21.alt }}">
+            {% endif %}
+
+            {% if project.image_22 %}
+            <img src="{{ project.image_22.url }}" alt="{{ project.image_22.alt }}">
+            {% endif %}
+
+            {% if project.image_23 %}
+            <img src="{{ project.image_23.url }}" alt="{{ project.image_23.alt }}">
+            {% endif %}
+
+            {% if project.image_24 %}
+            <img src="{{ project.image_24.url }}" alt="{{ project.image_24.alt }}">
+            {% endif %}
+
+            {% if project.image_25 %}
+            <img src="{{ project.image_25.url }}" alt="{{ project.image_25.alt }}">
+            {% endif %}
+
+            
+       
+        </div>
+
+
+    </div>
+</body>
+
+</html>

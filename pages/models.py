@@ -102,8 +102,8 @@ class Actu(models.Model):
 
 class About(models.Model):
     
-    title = models.CharField(max_length=200)
-    description = models.TextField(blank=True)
+    title_1 = models.CharField(max_length=200)
+    description_1 = models.TextField(blank=True)
     
     
     

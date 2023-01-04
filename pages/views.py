@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
+from django.http import HttpResponse
 
-from .models import Project, Actu, About
+from .models import Project, Actu
 
 from django.shortcuts import get_object_or_404
 
@@ -23,10 +24,10 @@ def index(request):
 def about(request):
     
     
-    actus = About.objects.all()
+    actus = Actu.objects.all()
     
     context = {
-        'about': about,
+        'actus': actus,
     }
     
     return render(request, 'pages/about.html', context)
@@ -35,6 +36,9 @@ def about(request):
 def contact(request):
     return render(request, 'pages/contact.html')
 
+
+def cont(request):
+    return render(request, 'pages/cont.html')
 
 def actu(request):
     
