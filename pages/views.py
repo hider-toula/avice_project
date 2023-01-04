@@ -3,7 +3,27 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, 'pages/index.html')
 
     
+def about(request):
+    return render(request, 'pages/about.html')
+
+
+
+def contact(request):
+    return render(request, 'pages/contact.html')
+
+
+
+def actu(request):
+    return render(request, 'pages/actu.html')
+
+
+
+
+
+
+
+
 

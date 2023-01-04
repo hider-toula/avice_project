@@ -1,0 +1,132 @@
+
+{% load static  %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}">
+    
+    <link rel="stylesheet" href="{%  static 'css/tablet.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/mobile.css' %}">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avice</title>
+</head>
+
+
+
+
+
+<body>
+
+    <header>
+
+
+        <div class="header">
+            <a class="brand" href=" {% url 'index' %}" >AVICE Architecture</a>
+            <nav class="navbar">
+                <a class="nav-item selec " href=" {% url 'index' %}" aria-current="page">Projets</a>
+                <a class="nav-item  " href=" {% url 'about' %}">Agence</a>
+                <a class="nav-item  " href=" {% url 'actu' %}"> Actualités</a>
+                <a class="nav-item  " href=" {% url 'contact' %}">Contact</a>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+        <div class="p-types">
+            <span  class="p-type-name p-selec"   id="tous" >Tous</span>
+            <span class="p-type-name" id="equipements">Équipements</span>
+            <span class="p-type-name" id="Logememnts" >Logements</span>
+            <span  class="p-type-name" id="Urbanisme" >Urbanisme</span>
+            <span  class="p-type-name" id="tertiaire">Tertiaire</span>
+            <span class="p-type-name" id="autre" >Autre</span>
+
+        </div>
+
+
+
+        <div class="projects">
+
+            {% if projects%} 
+       
+                {% for project in projects %}
+                    <div class="p-content" id="{{project.project_type}}">
+                        <div class="p-img">
+
+
+
+                            <a href="{% url 'detail' project.id %}" > 
+                                  <img src="{{project.main_image.url}}" alt=""> 
+                            </a>
+                            
+                        </div>
+
+                        <a href="{% url 'detail' project.id %}"  >
+
+                            <div class="p-info">
+                                <h3 class="p-title">{{project.title}}</h3>
+                                <p class="p-desc">{{project.adresse}}</p>  
+
+
+                            </div>
+
+                        </a>
+                    </div>
+
+                {% endfor %}
+
+
+            {%else%}
+
+                <h1 class="no-projects">pas de projet pour l'instant</h1>
+
+            {% endif %}
+
+        </div>
+    </div>
+    <script>
+
+        var types = document.querySelectorAll('.p-type-name');
+        types.forEach(item => {
+            item.addEventListener('click', () => {
+                types.forEach(type => {
+                    if (type != item) {
+                        type.classList.remove('p-selec');
+                    }
+                })
+
+                item.classList.add('p-selec');
+                
+            var projects = document.querySelectorAll('.p-content');
+            var selectedType = document.querySelector('.p-selec').innerHTML;
+            
+            projects.forEach(project => {
+                
+                if (project.id != selectedType && selectedType != 'Tous') {
+                    project.style.display = 'none';
+                } else {
+                    project.style.display = 'block';
+                }
+            })
+
+                
+            })
+        })
+
+        
+
+        
+    </script>
+
+</body>
+
+</html>
