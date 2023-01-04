@@ -1,0 +1,59 @@
+.ag-container {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding: 15px;
+}
+
+.competences {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 500px;
+    cursor: pointer;
+}
+
+.equipe,
+.presentation {
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.equipe h3::after,
+.presentation h3::after,
+.competences h3::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 10px;
+}
+
+.box .box_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box .box_header .bx-plus {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.box.active .box_header .bx-plus {
+    transform: rotate(45deg);
+}
+
+.box .box_content {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.box.active .box_content {
+    height: auto;
+    padding: 0.5rem 0;
+    transition: all 0.9s ease;
+}
