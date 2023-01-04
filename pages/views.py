@@ -1,8 +1,7 @@
 from django.shortcuts import render
 
-from django.http import HttpResponse
 
-from .models import Project, Actu
+from .models import Project, Actu, About
 
 from django.shortcuts import get_object_or_404
 

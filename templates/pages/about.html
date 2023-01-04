@@ -1,0 +1,358 @@
+
+{% load static  %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}">
+    
+    <link rel="stylesheet" href="{%  static 'css/tablet.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/mobile.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/agence.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avice</title>
+</head>
+
+
+
+
+
+<body>
+
+    <header>
+
+
+        <div class="header">
+            <a class="brand" href=" {% url 'index' %}" >AVICE Architecture</a>
+            <nav class="navbar">
+                <a class="nav-item  " href=" {% url 'index' %}" aria-current="page">Projets</a>
+                <a class="nav-item  selec" href=" {% url 'about' %}">Agence</a>
+                <a class="nav-item  " href=" {% url 'actu' %}"> Actualités</a>
+                <a class="nav-item  " href=" {% url 'contact' %}">Contact</a>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+
+    <div class="ag-container">
+        <div class="presentation">
+            <h3>Présentation</h3>
+            <p>
+                Le Cabinet Avice est un bureau d’études urbaines fondé en 2001
+spécialisé dans les études d’urbanisme et d’aménagement
+expertise : urbanisme réglementaire, lotissement, loi Littoral, évaluation environnementale…
+dirigé par un architecte
+            </p>
+        </div>
+
+        <div class="equipe">
+            <h3>Equipe</h3>
+            <p>
+                Philippe Avice : <br>
+
+Architecte, fondateur du bureau d’études
+            </p>
+        </div>
+
+        <div class="competences">
+            <h3>Compétences</h3>
+            <div class="box">
+                <div class="box_header">
+                    <h3>Plan locaux d’urbanisme</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="box_content">
+                    <p>Nous réalisons des PLU sur des territoires variés. Si les communes sont souvent de taille modeste (environ 500 habitants), nous travaillons également pour des villes plus importantes (Lucé 15 200 habitants ; Tergnier (14 300 habitants). Nos PLU concernent des communes littorales dans près de 30 % des cas. Deux PLU intercommunaux sont en cours d’élaboration dans le département de l’Yonne. Il peut s’agir également de modifications ou de révision simplifiées.
+
+                        Chaque territoire pose de nouvelles questions, auxquelles nous adaptons nos méthodes pour répondre au plus juste :<br>
+                        – analyse du territoire et travail de terrain précis et détaillé<br>
+                        – prise en compte de la qualité du paysage<br>
+                        – esquisses d’aménagement pour les secteurs à enjeux<br>
+                        – respect des budgets prévus pour l’étude<br>
+                        – une grande rigueur dans l’avancement de l’étude permet de concevoir des documents clairs, simples, lisibles.<br>
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="box_header">
+                    <h3>Cartes communales</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="box_content">
+                    <p>Une carte communale est un document permettant
+                         de définir les contours des zones constructibles
+                          dans une commune.
+                           Ce document simple permet avant tout de préserver
+                           les communes rurales d’un développement urbain anarchique. 
+                           Contrairement au PLU, la carte communale ne peut pas 
+                           réglementer de façon détaillée les projets futurs,
+                            mais elle préserve efficacement les zones
+                             naturelles et rurales, et peut réserver
+                              des secteurs destinés à l’implantation d’activités
+                               industrielles ou artisanales.<br><br>
+
+                               Certaines cartes communales peuvent être accompagnées d’études complémentaires :
+                                    <br>
+                               - éléments de paysage à protéger<br>
+                               - esquisses pour l’aménagement de zones de développement<br>
+                               - recommandations pour la création d’espaces publics, d’équipements<br>
+                               - évaluation environnementale… <br></p>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="box">
+                <div class="box_header">
+                    <h3>Aménagement</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="box_content">
+                    <p>L’architecte-urbaniste prépare le développement urbain en amont. Il répond aux enjeux du site, aux attentes des élus et propose des aménagements et des phasages réalistes avec les contraintes techniques et financières.
+<br><br>
+Esquisses d’aménagement : <br> <br>
+                        - Hypothèses de programme (logements, équipements…)<br>
+- Hypothèses et de densité<br>
+- Organisation précise des espaces<br>
+- Propositions de phasage<br>
+- Les contraintes liées aux réseaux, et notamment les eaux pluviales<br>
+- Insertion du projet dans le site<br> 
+
+<br><br>
+Projets d’aménagement : <br><br>
+                        - aménagement d’espaces publics<br>
+                         - permis d’aménager (lotissements)<br>
+                        - permis de construire<br>
+                        - déclarations préalables <br><br>
+</p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="box">
+                <div class="box_header">
+                    <h3>Programmation</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="box_content">
+                    <p>La programmation consiste à définir précisément les besoins auxquels un projet doit répondre. Ce travail conduit à élaborer un cahier des charges en vue de confier la création d’un projet à un maître d’oeuvre (architecte, paysagiste…). La programmation peut concerner diverses échelles de projets :
+
+                        <br><br>
+                        Programmation urbaine :
+
+                        <br><br>
+                        - renouvellement urbain<br>
+- études préalables à l’urbanisation<br>
+- études de faisabilité<br>
+<br><br>
+
+Programmation d’équipements : 
+<br><br>
+
+- programmation d’espaces publics<br>
+- équipements sportifs, culturels, administratifs <br>
+- équipements commerciaux<br>
+
+
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="box">
+                <div class="box_header">
+                    <h3>Évaluation environnementale</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="box_content">
+                    <p>De nombreuses missions confiées au cabinet Avice sont concernées par des enjeux environnementaux forts : communes littorales, communes situées dans des parcs naturels, communes comprenant des sites Natura 2000, des sites classés ou inscrits…. Nous traitons en interne le volet évaluation environnementale. Nous réalisons également ce volet pour le compte d’autres bureaux d’études.
+                        <br><br>
+
+ 
+                        Notre méthodologie répond aux exigences de la Direction régionale et interdépartementale de l’environnement et de l’énergie (DRIEE) d’Île-de-France et des Directions régionales de l’environnement, de l’aménagement et du logement (DREAL). Notre bureau d’études bénéficie d’une bonne connaissance des acteurs de l’environnement à l’œuvre dans ces régions. Notre travail est reconnu : l’évaluation environnementale réalisée dans le cadre du PLU de Regnéville-sur-Mer est montrée en exemple par la DREAL de Basse-Normandie lors de formations ou de colloques sur le sujet. Philippe Avice a été amené à témoigner pour faire partager son expérience.</p>
+                </div>
+
+            </div>
+
+        
+
+
+
+
+        <div class="box">
+            <div class="box_header">
+                <h3>Paysage</h3>
+                <i class='bx bx-plus'></i>
+            </div>
+            <div class="box_content">
+                <p>La préservation et la mise en valeur du paysage sont des domaines où les communes sont maîtres du jeu.
+                    Elles ont une grande liberté pour tenir compte ou non de ces enjeux dans leurs décisions. Mais les communes en assument les conséquences à jamais.
+                    Comment le projet va-t-il interférer avec le paysage ?
+                <br><br>
+
+                Prise en compte du paysage dans les projets :
+                <br><br>
+
+- analyse du paysage <br>
+- identification des enjeux paysagers <br>
+- propositions permettant la meilleure intégration des projets dans le site <br>
+
+<br><br>
+Etudes paysagères :
+<br><br>
+- aménagement d’entrées de ville<br>
+- aménagement d’espaces publics<br>
+- évaluation de l’impact de parcs éoliens<br>
+- protection d’éléments de paysage<br>
+
+
+
+                </p>
+            </div>
+
+        </div>
+
+
+
+    <div class="box">
+        <div class="box_header">
+            <h3>Loi littoral
+            </h3>
+            <i class='bx bx-plus'></i>
+        </div>
+        <div class="box_content">
+            <p>Nous avons acquis une expertise dans l’application de la loi littoral, avec plus de 10 PLU littoraux étudiés à ce jour. Comme l’application de cette loi est à l’origine de nombreux contentieux, nous menons une veille attentive sur les conclusions des litiges.
+<br><br>
+                Au travers de leur PLU, les communes littorales doivent aborder certains sujets spécifiques :
+                <br><br>
+
+
+                - définition des espaces remarquables<br>
+- définition des espaces proches du rivage<br>
+- distinction entre villages et hameaux<br>
+- hameau nouveau intégré à l’environnement<br>
+- protection des espaces boisés classés<br>
+- prise en compte du risque de submersion<br>
+- évaluation environnementale<br>
+</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+<div class="box">
+    <div class="box_header">
+        <h3>Concertation</h3>
+        <i class='bx bx-plus'></i>
+    </div>
+    <div class="box_content">
+        <p>Les études d’urbanisme s’accompagnent souvent d’une phase de concertation avec la population.
+
+            Les objectifs des projets doivent être expliqués en amont, la population doit être informée suffisamment tôt pour pouvoir réagir dans les temps en cas de désaccord. Nous accompagnons les élus dans cette démarche, dont les modalités doivent être adaptées à l’ampleur du projet.
+            <br><br>
+
+
+            Modalités de concertation les plus courantes :
+
+            <br><br>
+
+            - réunion publique<br>
+- exposition<br>
+- bulletin municipal<br>
+- site internet<br>
+- presse<br>
+
+
+ </p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="box">
+    <div class="box_header">
+        <h3>SIG et géomatique
+        </h3>
+        <i class='bx bx-plus'></i>
+    </div>
+    <div class="box_content">
+        <p>Le Cabinet Avice détient une excellente connaissance des standards élaborés par le Conseil national de l’information géographique <strong>(CNIG)</strong>, en vue de la diffusion des données géographiques des documents d’urbanisme sur le géoportail de l’urbanisme <strong>(GPU)</strong> .
+            <br><br>
+
+
+            Plusieurs échéances vont s’imposer aux collectivités locales dans les prochaines années :
+        <br><br>
+        - Depuis 2016, les collectivités doivent rendre leurs documents d’urbanisme accessibles en ligne (sur leur site propre, sur le Géoportail de l’urbanisme, etc.) ;<br>
+- Entre 2016 et 2020, lorsque les collectivités effectuent une révision de leur document d’urbanisme, elles doivent le numériser au format CNIG et le transmettre à l’Etat dans ce format ;<br>
+- A partir de 2020, les collectivités devront publier leurs documents d’urbanisme dans le Géoportail de l’urbanisme afin de les rendre exécutoires. A cette même date, les servitudes d’utilité publique présentes dans le GPU seront opposables même si elles ne figurent pas en annexe du document d’urbanisme disponible en mairie.<br>
+        <br><br>
+        Le personnel du Cabinet Avice est parfaitement compétent en système d’information géographiques : Philippe Avice et Chloé Chaminade ont suivi des formations et pratiquent au quotidien le logiciel Qgis.
+Depuis la parution des standards de la COVADIS puis du CNIG, le Cabinet Avice remet en fin d’étude aux maîtres d’ouvrages les fichiers exploitables par un système d’informations géographiques.
+        </p>
+    </div>
+
+</div>
+
+</div>
+
+
+       
+            
+            
+
+    
+    
+    </div>
+
+
+    <script>
+        var box = document.querySelectorAll('.box');
+        box.forEach(item => {
+            item.addEventListener('click', () => {
+                for(var i = 0; i < box.length; i++) {
+                    box[i].classList.remove('active');
+                }
+                item.classList.add('active');
+            })
+        })
+    </script>
+
+    
+</body>
+
+</html>

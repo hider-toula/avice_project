@@ -1,0 +1,73 @@
+
+{% load static  %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}">
+    
+    <link rel="stylesheet" href="{%  static 'css/tablet.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/mobile.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/contact.css' %}">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avice</title>
+</head>
+
+
+
+
+
+<body>
+
+    <header>
+
+
+        <div class="header">
+            <a class="brand" href=" {% url 'index' %}"  >AVICE Architecture</a>
+            <nav class="navbar">
+                <a class="nav-item  " href=" {% url 'index' %}" aria-current="page">Projets</a>
+                <a class="nav-item  " href=" {% url 'about' %}">Agence</a>
+                <a class="nav-item  " href=" {% url 'actu' %}"> Actualités</a>
+                <a class="nav-item selec " href=" {% url 'contact' %}">Contact</a>
+
+
+            </nav>
+        </div>
+
+    </header>
+
+
+   <div class="contact">
+    
+    <div class="contact-logo">
+
+        <a class="contact-brand" href=" {% url 'index' %}" >AVICE Architecture</a>
+    </div>
+
+    <div class="contact-infos">
+
+
+        <p> 3, rue d’Hauteville</p>
+        <p>  75010 Paris</p>
+        <p> T : +33 1 82 83 38 90 </p>
+
+        <p> P : +33 6 15 45 74 36</p>
+        
+    </div>
+
+    <div class="contact-image">
+        <img src="{%  static 'img/architecte-and-technical-plan.jpg' %}" alt="">
+    </div>
+
+</div>
+
+
+    
+</body>
+
+</html>
