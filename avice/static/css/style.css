@@ -167,8 +167,8 @@ body {
 }
 
 .container .projects .p-content {
-    max-width: 310px;
-    width: 310px;
+    max-width: 410px;
+    width: 410px;
     height: auto;
     margin: 30px;
     display: flex;
@@ -180,8 +180,8 @@ body {
 }
 
 .container .projects .p-content .p-img img {
-    width: 310px;
-    height: 430px;
+    width: 410px;
+    height: 350px;
     vertical-align: middle;
     -webkit-filter: grayscale(100%);
 }
