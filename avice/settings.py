@@ -132,3 +132,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #media folder settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'contact@avice.fr'
+EMAIL_HOST_PASSWORD = ''
+EMIAL_USE_TLS = True
+
+try:
+    from .local_settings import *
+    
+except ImportError:
+    pass
