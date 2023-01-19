@@ -269,8 +269,8 @@ body {
 .information .description {
     width: 50%;
     margin-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 15%;
+    padding-left: 15px;
+    padding-right: 5px;
     padding-top: 10px;
 }
 
@@ -279,8 +279,8 @@ body {
     flex-direction: column;
     width: 50%;
     margin-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 5px;
     padding-top: 10px;
 }
 
